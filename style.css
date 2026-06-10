@@ -1,0 +1,174 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #061830; /* Azul escuro jornalístico */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #cc0000; /* Detalhe em vermelho */
+}
+
+/* Banner Principal (Hero) */
+.hero {
+    background: linear-gradient(rgba(6, 24, 48, 0.8), rgba(6, 24, 48, 0.8)), url('https://picsum.photos/1200/400') no-repeat center center/cover;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    background-color: #cc0000;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #a00000;
+}
+
+/* Seção de Notícias/Cards */
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #061830;
+    padding-bottom: 10px;
+}
+
+.grid-artigos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+    border-top: 4px solid #061830;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-info {
+    padding: 20px;
+}
+
+.tag {
+    background-color: #e2e8f0;
+    color: #4a5568;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.card h3 {
+    margin: 15px 0 10px 0;
+    font-size: 20px;
+    color: #061830;
+}
+
+.card p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.btn-leia-mais {
+    background: none;
+    border: none;
+    color: #cc0000;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 0;
+}
+
+.btn-leia-mais:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    background-color: #061830;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+}
